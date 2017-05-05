@@ -17,13 +17,6 @@ import domain.StudentDomainModel;
 import util.HibernateUtil;
 
 public class StudentDAL  {
-
-
-	/**
-	 * addStudent - Method adds a student to the database
-	 * @param stu
-	 * @return
-	 */
 	public static StudentDomainModel addStudent(StudentDomainModel stu) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
@@ -142,10 +135,4 @@ public class StudentDAL  {
 
 		return stu;
 	}		
-	
-	
-	
-	
-	
-	
 }
